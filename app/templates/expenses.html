@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Expenses{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center">Expenses</h2>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Amount</th>
+                <th>Description</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for expense in expenses %}
+            <tr>
+                <td>{{ expense.id }}</td>
+                <td>{{ expense.amount }}</td>
+                <td>{{ expense.description }}</td>
+                <td>{{ expense.date }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

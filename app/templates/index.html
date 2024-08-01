@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center">Welcome to the Finance Control App</h1>
+    <div class="text-center mt-3">
+        <a href="{{ url_for('main_bp.users') }}" class="btn btn-primary">View Users</a>
+        <a href="{{ url_for('expenses_bp.expenses') }}" class="btn btn-secondary">View Expenses</a>
+    </div>
+</div>
+{% endblock %}
