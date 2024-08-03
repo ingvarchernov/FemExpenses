@@ -1,92 +1,45 @@
-2024-08-01 15:23:22,126 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 15:23:22,126 - INFO - Entered login route
-2024-08-01 15:23:28,465 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 15:23:28,465 - INFO - Entered login route
-2024-08-01 15:23:28,467 DEBUG: Login attempt with: username_or_email=ig [in c:\Users\ingva\FemExpenses\app\user_routes.py:85]
-2024-08-01 15:23:28,467 - DEBUG - Login attempt with: username_or_email=ig
-2024-08-01 15:23:29,660 INFO: Entered expenses route [in c:\Users\ingva\FemExpenses\app\expenses_routes.py:9]
-2024-08-01 15:23:29,660 - INFO - Entered expenses route
-2024-08-01 15:23:29,672 DEBUG: Fetched expenses for user_id=6: [] [in c:\Users\ingva\FemExpenses\app\expenses_routes.py:17]
-2024-08-01 15:23:29,672 - DEBUG - Fetched expenses for user_id=6: []
-2024-08-01 21:09:48,646 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 21:09:48,646 - INFO - Entered login route
-2024-08-01 21:09:53,883 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 21:09:53,883 - INFO - Entered login route
-2024-08-01 21:09:53,894 DEBUG: Login attempt with: username_or_email=ig [in c:\Users\ingva\FemExpenses\app\user_routes.py:85]
-2024-08-01 21:09:53,894 - DEBUG - Login attempt with: username_or_email=ig
-2024-08-01 21:09:58,211 INFO: Entered expenses route [in c:\Users\ingva\FemExpenses\app\expenses_routes.py:9]
-2024-08-01 21:09:58,211 - INFO - Entered expenses route
-2024-08-01 21:09:58,214 DEBUG: Fetched expenses for user_id=6: [] [in c:\Users\ingva\FemExpenses\app\expenses_routes.py:17]
-2024-08-01 21:09:58,214 - DEBUG - Fetched expenses for user_id=6: []
-2024-08-01 21:22:04,996 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 21:22:04,996 - INFO - Entered login route
-2024-08-01 21:22:11,287 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 21:22:11,287 - INFO - Entered login route
-2024-08-01 21:22:12,484 INFO: Entered register route [in c:\Users\ingva\FemExpenses\app\user_routes.py:57]
-2024-08-01 21:22:12,484 - INFO - Entered register route
-2024-08-01 21:22:13,188 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 21:22:13,188 - INFO - Entered login route
-2024-08-01 21:22:13,958 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 21:22:13,958 - INFO - Entered login route
-2024-08-01 21:22:17,637 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 21:22:17,637 - INFO - Entered login route
-2024-08-01 21:22:18,218 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 21:22:18,218 - INFO - Entered login route
-2024-08-01 21:22:18,776 INFO: Entered register route [in c:\Users\ingva\FemExpenses\app\user_routes.py:57]
-2024-08-01 21:22:18,776 - INFO - Entered register route
-2024-08-01 21:22:19,210 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 21:22:19,210 - INFO - Entered login route
-2024-08-01 21:22:23,285 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 21:22:23,285 - INFO - Entered login route
-2024-08-01 21:22:23,287 DEBUG: Login attempt with: username_or_email=ig [in c:\Users\ingva\FemExpenses\app\user_routes.py:85]
-2024-08-01 21:22:23,287 - DEBUG - Login attempt with: username_or_email=ig
-2024-08-01 21:22:26,676 INFO: Entered expenses route [in c:\Users\ingva\FemExpenses\app\expenses_routes.py:9]
-2024-08-01 21:22:26,676 - INFO - Entered expenses route
-2024-08-01 21:22:26,680 DEBUG: Fetched expenses for user_id=6: [] [in c:\Users\ingva\FemExpenses\app\expenses_routes.py:17]
-2024-08-01 21:22:26,680 - DEBUG - Fetched expenses for user_id=6: []
-2024-08-01 21:22:34,414 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 21:22:34,414 - INFO - Entered login route
-2024-08-01 21:22:36,264 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 21:22:36,264 - INFO - Entered login route
-2024-08-01 21:22:49,584 INFO: Entered register route [in c:\Users\ingva\FemExpenses\app\user_routes.py:57]
-2024-08-01 21:22:49,584 - INFO - Entered register route
-2024-08-01 21:22:50,609 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 21:22:50,609 - INFO - Entered login route
-2024-08-01 21:22:50,894 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 21:22:50,894 - INFO - Entered login route
-2024-08-01 21:22:53,656 INFO: Entered register route [in c:\Users\ingva\FemExpenses\app\user_routes.py:57]
-2024-08-01 21:22:53,656 - INFO - Entered register route
-2024-08-01 21:22:56,292 INFO: Entered register route [in c:\Users\ingva\FemExpenses\app\user_routes.py:57]
-2024-08-01 21:22:56,292 - INFO - Entered register route
-2024-08-01 21:22:57,110 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 21:22:57,110 - INFO - Entered login route
-2024-08-01 21:23:00,765 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 21:23:00,765 - INFO - Entered login route
-2024-08-01 21:23:52,642 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 21:23:52,642 - INFO - Entered login route
-2024-08-01 21:23:58,874 INFO: Entered register route [in c:\Users\ingva\FemExpenses\app\user_routes.py:57]
-2024-08-01 21:23:58,874 - INFO - Entered register route
-2024-08-01 21:24:02,154 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 21:24:02,154 - INFO - Entered login route
-2024-08-01 21:24:09,065 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 21:24:09,065 - INFO - Entered login route
-2024-08-01 21:24:09,067 DEBUG: Login attempt with: username_or_email=ig [in c:\Users\ingva\FemExpenses\app\user_routes.py:85]
-2024-08-01 21:24:09,067 - DEBUG - Login attempt with: username_or_email=ig
-2024-08-01 21:24:14,715 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 21:24:14,715 - INFO - Entered login route
-2024-08-01 21:24:22,152 INFO: Entered expenses route [in c:\Users\ingva\FemExpenses\app\expenses_routes.py:9]
-2024-08-01 21:24:22,152 - INFO - Entered expenses route
-2024-08-01 21:24:22,155 DEBUG: Fetched expenses for user_id=6: [] [in c:\Users\ingva\FemExpenses\app\expenses_routes.py:17]
-2024-08-01 21:24:22,155 - DEBUG - Fetched expenses for user_id=6: []
-2024-08-01 21:24:27,151 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 21:24:27,151 - INFO - Entered login route
-2024-08-01 21:24:54,649 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 21:24:54,649 - INFO - Entered login route
-2024-08-01 21:24:58,626 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 21:24:58,626 - INFO - Entered login route
-2024-08-01 21:25:21,155 INFO: Entered expenses route [in c:\Users\ingva\FemExpenses\app\expenses_routes.py:9]
-2024-08-01 21:25:21,155 - INFO - Entered expenses route
-2024-08-01 21:25:21,162 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 21:25:21,162 - INFO - Entered login route
-2024-08-01 21:25:37,983 INFO: Entered login route [in c:\Users\ingva\FemExpenses\app\user_routes.py:80]
-2024-08-01 21:25:37,983 - INFO - Entered login route
+2024-08-03 15:24:26,276 - DEBUG - Registration data: username=ing, name=ihor, surname=chernov, email=igorek.chernov007@gmail.com
+2024-08-03 15:24:27,179 - INFO - Entered login route
+2024-08-03 15:24:32,257 - INFO - Entered login route
+2024-08-03 15:24:32,258 - DEBUG - Login attempt with: username_or_email=ig
+2024-08-03 15:24:32,526 - INFO - Entered login route
+2024-08-03 15:24:36,272 - INFO - Entered login route
+2024-08-03 15:24:40,058 - INFO - Entered login route
+2024-08-03 15:24:40,058 - DEBUG - Login attempt with: username_or_email=ig
+2024-08-03 15:24:40,454 - INFO - Entered login route
+2024-08-03 15:25:12,277 - INFO - Entered login route
+2024-08-03 15:25:12,277 - DEBUG - Login attempt with: username_or_email=ing
+2024-08-03 15:25:33,000 - INFO - Entered login route
+2024-08-03 15:25:36,651 - INFO - Entered expenses route
+2024-08-03 15:25:36,969 - DEBUG - Fetched expenses for user_id=1: []
+2024-08-03 15:25:40,985 - INFO - Entered login route
+2024-08-03 15:26:03,742 - INFO - Entered login route
+2024-08-03 15:26:03,743 - DEBUG - Login attempt with: username_or_email=ing
+2024-08-03 15:26:11,379 - INFO - Entered login route
+2024-08-03 15:26:17,590 - INFO - Entered login route
+2024-08-03 16:46:54,353 - INFO - Entered login route
+2024-08-03 16:47:03,502 - INFO - Entered register route
+2024-08-03 16:49:10,565 - INFO - Entered register route
+2024-08-03 16:49:10,566 - DEBUG - Registration data: username=dasha_7, name=daria, surname=primachenko, email=pashol_nahuy@gmail.com
+2024-08-03 16:49:11,451 - INFO - Entered login route
+2024-08-03 16:49:22,142 - INFO - Entered login route
+2024-08-03 16:49:22,142 - DEBUG - Login attempt with: username_or_email=dasha_7
+2024-08-03 16:49:36,570 - INFO - Entered login route
+2024-08-03 16:49:40,256 - INFO - Entered login route
+2024-08-03 16:49:50,725 - INFO - Entered login route
+2024-08-03 16:49:50,725 - DEBUG - Login attempt with: username_or_email=dasha_
+2024-08-03 16:49:51,097 - INFO - Entered login route
+2024-08-03 16:50:08,910 - INFO - Entered login route
+2024-08-03 16:50:08,911 - DEBUG - Login attempt with: username_or_email=pashol_nahuy@gmail.com
+2024-08-03 16:50:21,685 - INFO - Entered login route
+2024-08-03 16:50:22,754 - INFO - Entered register route
+2024-08-03 16:50:37,191 - INFO - Entered register route
+2024-08-03 16:50:37,192 - DEBUG - Registration data: username=ing, name=ihor, surname=chernov, email=igorek.chernov007@gmail.com
+2024-08-03 16:50:38,010 - INFO - Entered login route
+2024-08-03 16:50:43,244 - INFO - Entered login route
+2024-08-03 16:50:43,245 - DEBUG - Login attempt with: username_or_email=ing
+2024-08-03 16:52:23,693 - INFO - Entered login route
+2024-08-03 16:52:26,217 - INFO - Entered register route
+2024-08-03 16:52:27,001 - INFO - Entered login route
+2024-08-03 16:52:27,982 - INFO - Entered register route
+2024-08-03 16:52:28,976 - INFO - Entered login route

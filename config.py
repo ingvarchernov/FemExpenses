@@ -1,22 +1,26 @@
 import os
 
 class Config:
-    # Параметри підключення до бази даних SQL Server
-    SQL_SERVER = 'localhost\MSSQLSERVER01'
+    # SQL Server connection parameters
+    SQL_SERVER = 'sqlserverexpenses.database.windows.net'
     DATABASE = 'FamilyExpenses'
-    DRIVER = 'ODBC Driver 17 for SQL Server'
-    TRUSTED_CONNECTION = 'yes'
+    USERNAME = 'ihoradmin'
+    PASSWORD = 'DBExpenseslogin#'
+    DRIVER = 'ODBC Driver 18 for SQL Server'  # Ensure this matches the driver you installed
+    PORT = 1433
 
-    # Строка підключення
+    # SQLAlchemy connection string
     SQLALCHEMY_DATABASE_URI = (
-        f"mssql+pyodbc://{SQL_SERVER}/{DATABASE}"
+        f"mssql+pyodbc://{USERNAME}:{PASSWORD}@{SQL_SERVER}:{PORT}/{DATABASE}"
         f"?driver={DRIVER}"
-        f"&trusted_connection={TRUSTED_CONNECTION}"
+        f"&Encrypt=yes"
+        f"&TrustServerCertificate=no"
+        f"&Connection Timeout=30"
     )
 
-    # Налаштування логування
+    # Logging configuration
     LOGGING_LEVEL = 'DEBUG'
     LOG_FILE = 'app.log'
 
-    # Секретний ключ для сесій
-    SECRET_KEY = os.urandom(24)  # Генерує випадковий секретний ключ
+    # Secret key for session management
+    SECRET_KEY = os.urandom(24)  # Generates a random secret key
