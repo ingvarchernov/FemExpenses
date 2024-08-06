@@ -1,29 +1,35 @@
-{% extends "base.html" %}
-
-{% block title %}Expenses{% endblock %}
+{% extends 'base.html' %}
 
 {% block content %}
-<div class="container mt-5">
-    <h2 class="text-center">Expenses</h2>
-    <table class="table table-bordered table-striped">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Amount</th>
-                <th>Description</th>
-                <th>Date</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for expense in expenses %}
-            <tr>
-                <td>{{ expense.id }}</td>
-                <td>{{ expense.amount }}</td>
-                <td>{{ expense.description }}</td>
-                <td>{{ expense.date }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <h2 class="text-center">Expenses</h2>
+        <a href="{{ url_for('expenses_bp.add_expense') }}" class="btn btn-success mb-3">Add Expense</a>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for expense in expenses %}
+                <tr>
+                    <td>{{ expense.description }}</td>
+                    <td>{{ expense.amount }}</td>
+                    <td>{{ expense.date }}</td>
+                    <td>
+                        <a href="{{ url_for('expenses_bp.edit_expense', id=expense.id) }}" class="btn btn-warning btn-sm">Edit</a>
+                        <form action="{{ url_for('expenses_bp.delete_expense', id=expense.id) }}" method="post" style="display:inline;">
+                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </div>
 {% endblock %}

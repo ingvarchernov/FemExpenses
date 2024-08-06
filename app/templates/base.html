@@ -3,42 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <link rel="icon" href="{{ url_for('static', filename='expen.ico') }}" type="image/x-icon">
+    <title>FemExpenses</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="{{ url_for('main_bp.index') }}">Family Expenses</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    {% if 'username' in session %}
-                        <li class="nav-item"><a class="nav-link" href="{{ url_for('user_bp.logout') }}">Logout</a></li>
-                    {% else %}
-                        <li class="nav-item"><a class="nav-link" href="{{ url_for('user_bp.login') }}">Login</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ url_for('user_bp.register') }}">Register</a></li>
-                    {% endif %}
-                </ul>
-            </div>
-        </nav>
-        <div class="content">
-            {% with messages = get_flashed_messages(with_categories=true) %}
-                {% if messages %}
-                    <div class="container mt-4">
-                        {% for category, message in messages %}
-                            <div class="alert alert-{{ category }}">{{ message }}</div>
-                        {% endfor %}
-                    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="{{ url_for('main_bp.index') }}">FemExpenses</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                {% if session['username'] %}
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('main_bp.index') }}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('user_bp.logout') }}">Logout</a></li>
+                {% else %}
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('user_bp.login') }}">Login</a></li>
                 {% endif %}
-            {% endwith %}
-            {% block content %}{% endblock %}
+            </ul>
         </div>
-        <footer class="footer">
-            <p>&copy; 2024 Family Expenses</p>
-        </footer>
+    </nav>
+    <div class="container mt-4">
+        {% block content %}{% endblock %}
     </div>
-    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <p>&copy; 2024 FemExpenses. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

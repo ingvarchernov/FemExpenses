@@ -33,15 +33,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-.container {
-    width: 80%;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex: 1;  /* This makes the container take up remaining space */
-}
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -88,12 +79,45 @@ form button:hover {
     background-color: #555;
 }
 
-.footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #f1f1f1;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    flex-shrink: 0;  /* This makes sure the footer stays at the bottom */
+.container {
+    min-height: calc(100vh - 60px); /* 60px - висота футера */
+    padding-bottom: 60px; /* щоб контент не заходив під футер */
 }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 60px; /* центрування тексту по вертикалі */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.btn-primary {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #555;
+}
+

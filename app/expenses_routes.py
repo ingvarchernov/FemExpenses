@@ -1,5 +1,5 @@
 # app/expense_routes.py
-from flask import Blueprint, render_template, request, redirect, url_for, session, current_app
+from flask import Blueprint, render_template, request, redirect, url_for, session, current_app, flash
 from app.db import get_db_connection
 
 expenses_bp = Blueprint('expenses_bp', __name__)
@@ -17,47 +17,57 @@ def expenses():
     current_app.logger.debug(f'Fetched expenses for user_id={session["user_id"]}: {expenses}')
     return render_template('expenses.html', expenses=expenses)
 
-@expenses_bp.route('/add_expense', methods=['GET', 'POST'])
+@expenses_bp.route('/add', methods=['GET', 'POST'])
 def add_expense():
-    if 'user_id' not in session:
-        return redirect(url_for('user_bp.login'))
     if request.method == 'POST':
-        amount = request.form['amount']
         description = request.form['description']
+        amount = request.form['amount']
         date = request.form['date']
 
         conn = get_db_connection()
         cursor = conn.cursor()
-        cursor.execute("INSERT INTO Expenses (amount, description, date) VALUES (?, ?, ?)",
-                       (amount, description, date))
+        cursor.execute("""
+            INSERT INTO Expenses (description, amount, date)
+            VALUES (?, ?, ?)
+        """, (description, amount, date))
         conn.commit()
         cursor.close()
-        conn.close()  # Закриваємо з'єднання після використання
-        return redirect(url_for('expenses_bp.expenses'))
-    return render_template('add_expense.html')
 
-@expenses_bp.route('/expenses/edit/<int:expense_id>', methods=['GET', 'POST'])
-def edit_expense(expense_id):
+        return redirect(url_for('expenses_bp.expenses'))
+    return render_template('add_expenses.html')
+
+@expenses_bp.route('/edit/<int:id>', methods=['GET', 'POST'])
+def edit_expense(id):
     conn = get_db_connection()
     cursor = conn.cursor()
+
     if request.method == 'POST':
         description = request.form['description']
         amount = request.form['amount']
-        cursor.execute("UPDATE Expenses SET description = ?, amount = ? WHERE id = ?", (description, amount, expense_id))
-        conn.commit()
-        conn.close()
-        return redirect(url_for('expense_bp.expenses'))
-    else:
-        cursor.execute("SELECT * FROM Expenses WHERE id = ?", (expense_id,))
-        expense = cursor.fetchone()
-        conn.close()
-        return render_template('edit_expenses.html', expense=expense)
+        date = request.form['date']
 
-@expenses_bp.route('/expenses/delete/<int:expense_id>', methods=['POST'])
-def delete_expense(expense_id):
+        cursor.execute("""
+            UPDATE Expenses
+            SET description = ?, amount = ?, date = ?
+            WHERE id = ?
+        """, (description, amount, date, id))
+        conn.commit()
+        cursor.close()
+
+        return redirect(url_for('expenses_bp.expenses'))
+
+    cursor.execute("SELECT * FROM Expenses WHERE id = ?", (id,))
+    expense = cursor.fetchone()
+    cursor.close()
+
+    return render_template('edit_expenses.html', expense=expense)
+
+@expenses_bp.route('/delete/<int:id>')
+def delete_expense(id):
     conn = get_db_connection()
     cursor = conn.cursor()
-    cursor.execute("DELETE FROM Expenses WHERE id = ?", (expense_id,))
+    cursor.execute("DELETE FROM Expenses WHERE id = ?", (id,))
     conn.commit()
-    conn.close()
-    return redirect(url_for('expense_bp.expenses'))
+    cursor.close()
+
+    return redirect(url_for('expenses_bp.expenses'))
