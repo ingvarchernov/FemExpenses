@@ -1,21 +1,16 @@
 import os
 
 class Config:
-    # SQL Server connection parameters
-    SQL_SERVER = 'sqlserverexpenses.database.windows.net'
+    # MySQL connection parameters
+    SQL_SERVER = 'localhost'
     DATABASE = 'FamilyExpenses'
     USERNAME = 'ihoradmin'
     PASSWORD = 'DBExpenseslogin#'
-    DRIVER = 'ODBC Driver 18 for SQL Server'  # Ensure this matches the driver you installed
-    PORT = 1433
+    PORT = 3306  # Стандартний порт для MySQL
 
-    # SQLAlchemy connection string
+    # SQLAlchemy connection string for MySQL
     SQLALCHEMY_DATABASE_URI = (
-        f"mssql+pyodbc://{USERNAME}:{PASSWORD}@{SQL_SERVER}:{PORT}/{DATABASE}"
-        f"?driver={DRIVER}"
-        f"&Encrypt=yes"
-        f"&TrustServerCertificate=no"
-        f"&Connection Timeout=30"
+        f"mysql+pymysql://{USERNAME}:{PASSWORD}@{SQL_SERVER}:{PORT}/{DATABASE}"
     )
 
     # Logging configuration

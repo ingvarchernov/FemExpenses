@@ -11,7 +11,7 @@ def expenses():
         return redirect(url_for('user_bp.login'))
     conn = get_db_connection()
     cursor = conn.cursor()
-    cursor.execute("SELECT id, amount, description, date FROM Expenses")
+    cursor.execute("SELECT id, amount, description, expenses_date FROM Expenses")
     expenses = cursor.fetchall()
     cursor.close()
     current_app.logger.debug(f'Fetched expenses for user_id={session["user_id"]}: {expenses}')
@@ -22,12 +22,12 @@ def add_expense():
     if request.method == 'POST':
         description = request.form['description']
         amount = request.form['amount']
-        date = request.form['date']
+        date = request.form['expenses_date']
 
         conn = get_db_connection()
         cursor = conn.cursor()
         cursor.execute("""
-            INSERT INTO Expenses (description, amount, date)
+            INSERT INTO Expenses (description, amount, expenses_date)
             VALUES (?, ?, ?)
         """, (description, amount, date))
         conn.commit()
@@ -44,7 +44,7 @@ def edit_expense(id):
     if request.method == 'POST':
         description = request.form['description']
         amount = request.form['amount']
-        date = request.form['date']
+        date = request.form['expenses_date']
 
         cursor.execute("""
             UPDATE Expenses

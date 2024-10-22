@@ -1,22 +1,20 @@
-import pyodbc
+import pymysql
 from flask import current_app, g
 
 def get_db_connection():
     try:
         if 'db_connection' not in g:
-            connection_string = (
-                f"DRIVER={{{current_app.config['DRIVER']}}};"
-                f"SERVER={current_app.config['SQL_SERVER']},{current_app.config['PORT']};"
-                f"DATABASE={current_app.config['DATABASE']};"
-                f"UID={current_app.config['USERNAME']};"
-                f"PWD={current_app.config['PASSWORD']};"
-                f"Encrypt=yes;"
-                f"TrustServerCertificate=no;"
-                f"Connection Timeout=30;"
+            # Підключення до бази даних MySQL
+            g.db_connection = pymysql.connect(
+                host=current_app.config['SQL_SERVER'],
+                port=current_app.config['PORT'],
+                user=current_app.config['USERNAME'],
+                password=current_app.config['PASSWORD'],
+                database=current_app.config['DATABASE'],
+                cursorclass=pymysql.cursors.DictCursor
             )
-            g.db_connection = pyodbc.connect(connection_string)
         return g.db_connection
-    except pyodbc.Error as e:
+    except pymysql.MySQLError as e:
         print(f"Database connection error: {e}")
         raise
 

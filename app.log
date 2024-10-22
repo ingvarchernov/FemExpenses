@@ -1,68 +1,77 @@
-2024-08-06 21:44:15,113 - DEBUG - Fetched expenses for user_id=1: [(1, Decimal('12.000'), 'sdfsfsfsdf', datetime.datetime(2024, 8, 6, 0, 0)), (2, Decimal('12.000'), 'sdfsfsfsdf', datetime.datetime(2024, 8, 7, 0, 0))]
-2024-08-06 21:44:37,042 - INFO - Entered expenses route
-2024-08-06 21:44:37,253 - DEBUG - Fetched expenses for user_id=1: [(1, Decimal('12.000'), '?????????', datetime.datetime(2024, 8, 6, 0, 0)), (2, Decimal('12.000'), 'sdfsfsfsdf', datetime.datetime(2024, 8, 7, 0, 0))]
-2024-08-06 21:44:49,822 - INFO - Entered login route
-2024-08-06 21:44:51,793 - INFO - Entered register route
-2024-08-06 21:45:00,631 - INFO - Entered register route
-2024-08-06 21:45:00,632 - DEBUG - Registration data: username=ing, name=ihor, surname=chernov, email=igorek.chernov007@gmail.com, role=admin
-2024-08-06 21:45:01,450 - INFO - Entered register route
-2024-08-06 21:45:09,017 - INFO - Entered register route
-2024-08-06 21:45:09,017 - DEBUG - Registration data: username=ing, name=ihor, surname=chernov, email=igorek.chernov007@gmail.com, role=admin
-2024-08-06 21:45:09,646 - INFO - Entered register route
-2024-08-06 21:45:11,683 - INFO - Entered register route
-2024-08-06 21:45:13,457 - INFO - Entered login route
-2024-08-06 21:45:20,947 - INFO - Entered register route
-2024-08-06 21:52:36,630 INFO: Entered login route [in /home/ihor/FemExpenses/app/user_routes.py:91]
-2024-08-06 21:52:36,630 - INFO - Entered login route
-2024-08-06 21:52:42,246 INFO: Entered login route [in /home/ihor/FemExpenses/app/user_routes.py:91]
-2024-08-06 21:52:42,246 - INFO - Entered login route
-2024-08-06 21:52:42,247 DEBUG: Login attempt with: username_or_email=ing [in /home/ihor/FemExpenses/app/user_routes.py:96]
-2024-08-06 21:52:42,247 - DEBUG - Login attempt with: username_or_email=ing
-2024-08-06 21:52:43,829 INFO: Entered expenses route [in /home/ihor/FemExpenses/app/expenses_routes.py:9]
-2024-08-06 21:52:43,829 - INFO - Entered expenses route
-2024-08-06 21:52:43,847 DEBUG: Fetched expenses for user_id=1: [(1, Decimal('12.000'), '?????????', datetime.datetime(2024, 8, 6, 0, 0)), (2, Decimal('12.000'), 'sdfsfsfsdf', datetime.datetime(2024, 8, 7, 0, 0))] [in /home/ihor/FemExpenses/app/expenses_routes.py:17]
-2024-08-06 21:52:43,847 - DEBUG - Fetched expenses for user_id=1: [(1, Decimal('12.000'), '?????????', datetime.datetime(2024, 8, 6, 0, 0)), (2, Decimal('12.000'), 'sdfsfsfsdf', datetime.datetime(2024, 8, 7, 0, 0))]
-2024-08-06 21:53:14,720 INFO: Entered login route [in /home/ihor/FemExpenses/app/user_routes.py:91]
-2024-08-06 21:53:14,720 - INFO - Entered login route
-2024-08-06 21:53:17,338 INFO: Entered login route [in /home/ihor/FemExpenses/app/user_routes.py:91]
-2024-08-06 21:53:17,338 - INFO - Entered login route
-2024-08-06 21:53:17,339 DEBUG: Login attempt with: username_or_email=ing [in /home/ihor/FemExpenses/app/user_routes.py:96]
-2024-08-06 21:53:17,339 - DEBUG - Login attempt with: username_or_email=ing
-2024-08-06 21:53:19,034 INFO: Entered expenses route [in /home/ihor/FemExpenses/app/expenses_routes.py:9]
-2024-08-06 21:53:19,034 - INFO - Entered expenses route
-2024-08-06 21:53:19,250 DEBUG: Fetched expenses for user_id=1: [(1, Decimal('12.000'), '?????????', datetime.datetime(2024, 8, 6, 0, 0)), (2, Decimal('12.000'), 'sdfsfsfsdf', datetime.datetime(2024, 8, 7, 0, 0))] [in /home/ihor/FemExpenses/app/expenses_routes.py:17]
-2024-08-06 21:53:19,250 - DEBUG - Fetched expenses for user_id=1: [(1, Decimal('12.000'), '?????????', datetime.datetime(2024, 8, 6, 0, 0)), (2, Decimal('12.000'), 'sdfsfsfsdf', datetime.datetime(2024, 8, 7, 0, 0))]
-2024-08-06 21:53:30,641 INFO: Entered expenses route [in /home/ihor/FemExpenses/app/expenses_routes.py:9]
-2024-08-06 21:53:30,641 - INFO - Entered expenses route
-2024-08-06 21:53:30,659 DEBUG: Fetched expenses for user_id=1: [(1, Decimal('12.000'), '?????????', datetime.datetime(2024, 8, 6, 0, 0)), (2, Decimal('12.000'), 'sdfsfsfsdf', datetime.datetime(2024, 8, 7, 0, 0)), (3, Decimal('44.000'), 'sdfdsf', datetime.datetime(2024, 8, 5, 0, 0))] [in /home/ihor/FemExpenses/app/expenses_routes.py:17]
-2024-08-06 21:53:30,659 - DEBUG - Fetched expenses for user_id=1: [(1, Decimal('12.000'), '?????????', datetime.datetime(2024, 8, 6, 0, 0)), (2, Decimal('12.000'), 'sdfsfsfsdf', datetime.datetime(2024, 8, 7, 0, 0)), (3, Decimal('44.000'), 'sdfdsf', datetime.datetime(2024, 8, 5, 0, 0))]
-2024-08-06 21:54:13,578 INFO: Entered expenses route [in /home/ihor/FemExpenses/app/expenses_routes.py:9]
-2024-08-06 21:54:13,578 - INFO - Entered expenses route
-2024-08-06 21:54:13,595 DEBUG: Fetched expenses for user_id=1: [(1, Decimal('12.000'), 'dfdsf', datetime.datetime(2001, 5, 24, 0, 0)), (2, Decimal('12.000'), 'sdfsfsfsdf', datetime.datetime(2024, 8, 7, 0, 0)), (3, Decimal('44.000'), 'sdfdsf', datetime.datetime(2024, 8, 5, 0, 0))] [in /home/ihor/FemExpenses/app/expenses_routes.py:17]
-2024-08-06 21:54:13,595 - DEBUG - Fetched expenses for user_id=1: [(1, Decimal('12.000'), 'dfdsf', datetime.datetime(2001, 5, 24, 0, 0)), (2, Decimal('12.000'), 'sdfsfsfsdf', datetime.datetime(2024, 8, 7, 0, 0)), (3, Decimal('44.000'), 'sdfdsf', datetime.datetime(2024, 8, 5, 0, 0))]
-2024-08-06 21:54:29,105 INFO: Entered expenses route [in /home/ihor/FemExpenses/app/expenses_routes.py:9]
-2024-08-06 21:54:29,105 - INFO - Entered expenses route
-2024-08-06 21:54:29,435 DEBUG: Fetched expenses for user_id=1: [(1, Decimal('12.000'), 'dfdsf', datetime.datetime(2001, 5, 24, 0, 0)), (2, Decimal('12.000'), 'sdfsfsfsdf', datetime.datetime(2024, 8, 7, 0, 0)), (3, Decimal('44.000'), 'sdfdsf', datetime.datetime(2024, 8, 5, 0, 0))] [in /home/ihor/FemExpenses/app/expenses_routes.py:17]
-2024-08-06 21:54:29,435 - DEBUG - Fetched expenses for user_id=1: [(1, Decimal('12.000'), 'dfdsf', datetime.datetime(2001, 5, 24, 0, 0)), (2, Decimal('12.000'), 'sdfsfsfsdf', datetime.datetime(2024, 8, 7, 0, 0)), (3, Decimal('44.000'), 'sdfdsf', datetime.datetime(2024, 8, 5, 0, 0))]
-2024-08-06 21:54:47,625 INFO: Entered expenses route [in /home/ihor/FemExpenses/app/expenses_routes.py:9]
-2024-08-06 21:54:47,625 - INFO - Entered expenses route
-2024-08-06 21:54:47,642 DEBUG: Fetched expenses for user_id=1: [(1, Decimal('12.000'), 'dfdsf', datetime.datetime(2001, 5, 24, 0, 0)), (2, Decimal('12.000'), 'sdfsfsfsdf', datetime.datetime(2024, 8, 7, 0, 0)), (3, Decimal('44.000'), 'sdfdsf', datetime.datetime(2024, 8, 5, 0, 0)), (4, Decimal('54.000'), '?????????', datetime.datetime(2024, 8, 6, 0, 0))] [in /home/ihor/FemExpenses/app/expenses_routes.py:17]
-2024-08-06 21:54:47,642 - DEBUG - Fetched expenses for user_id=1: [(1, Decimal('12.000'), 'dfdsf', datetime.datetime(2001, 5, 24, 0, 0)), (2, Decimal('12.000'), 'sdfsfsfsdf', datetime.datetime(2024, 8, 7, 0, 0)), (3, Decimal('44.000'), 'sdfdsf', datetime.datetime(2024, 8, 5, 0, 0)), (4, Decimal('54.000'), '?????????', datetime.datetime(2024, 8, 6, 0, 0))]
-2024-08-06 21:54:57,189 INFO: Entered login route [in /home/ihor/FemExpenses/app/user_routes.py:91]
-2024-08-06 21:54:57,189 - INFO - Entered login route
-2024-08-06 21:54:58,042 INFO: Entered register route [in /home/ihor/FemExpenses/app/user_routes.py:56]
-2024-08-06 21:54:58,042 - INFO - Entered register route
-2024-08-06 21:55:11,368 INFO: Entered register route [in /home/ihor/FemExpenses/app/user_routes.py:56]
-2024-08-06 21:55:11,368 - INFO - Entered register route
-2024-08-06 21:55:11,368 DEBUG: Registration data: username=gg, name=ihor, surname=chernov, email=igorek.chernov@gmail.com, role=admin [in /home/ihor/FemExpenses/app/user_routes.py:65]
-2024-08-06 21:55:11,368 - DEBUG - Registration data: username=gg, name=ihor, surname=chernov, email=igorek.chernov@gmail.com, role=admin
-2024-08-06 21:55:12,245 INFO: Entered login route [in /home/ihor/FemExpenses/app/user_routes.py:91]
-2024-08-06 21:55:12,245 - INFO - Entered login route
-2024-08-06 21:55:55,257 INFO: Entered login route [in /home/ihor/FemExpenses/app/user_routes.py:91]
-2024-08-06 21:55:55,257 - INFO - Entered login route
-2024-08-06 21:55:55,257 DEBUG: Login attempt with: username_or_email=gg [in /home/ihor/FemExpenses/app/user_routes.py:96]
-2024-08-06 21:55:55,257 - DEBUG - Login attempt with: username_or_email=gg
-2024-08-06 21:56:04,158 INFO: Entered expenses route [in /home/ihor/FemExpenses/app/expenses_routes.py:9]
-2024-08-06 21:56:04,158 - INFO - Entered expenses route
-2024-08-06 21:56:04,389 DEBUG: Fetched expenses for user_id=4: [(1, Decimal('12.000'), 'dfdsf', datetime.datetime(2001, 5, 24, 0, 0)), (2, Decimal('12.000'), 'sdfsfsfsdf', datetime.datetime(2024, 8, 7, 0, 0)), (3, Decimal('44.000'), 'sdfdsf', datetime.datetime(2024, 8, 5, 0, 0)), (4, Decimal('54.000'), '?????????', datetime.datetime(2024, 8, 6, 0, 0))] [in /home/ihor/FemExpenses/app/expenses_routes.py:17]
-2024-08-06 21:56:04,389 - DEBUG - Fetched expenses for user_id=4: [(1, Decimal('12.000'), 'dfdsf', datetime.datetime(2001, 5, 24, 0, 0)), (2, Decimal('12.000'), 'sdfsfsfsdf', datetime.datetime(2024, 8, 7, 0, 0)), (3, Decimal('44.000'), 'sdfdsf', datetime.datetime(2024, 8, 5, 0, 0)), (4, Decimal('54.000'), '?????????', datetime.datetime(2024, 8, 6, 0, 0))]
+2024-10-22 11:41:15,983 - DEBUG - Registration data: username=ing, name=ihor, surname=chernov, email=igorek.chernov007@gmail.com, role=admin
+2024-10-22 11:43:45,893 INFO: Entered login route [in /home/ihor/FemExpenses/app/user_routes.py:91]
+2024-10-22 11:43:45,893 - INFO - Entered login route
+2024-10-22 11:43:47,014 INFO: Entered register route [in /home/ihor/FemExpenses/app/user_routes.py:56]
+2024-10-22 11:43:47,014 - INFO - Entered register route
+2024-10-22 11:43:54,421 INFO: Entered register route [in /home/ihor/FemExpenses/app/user_routes.py:56]
+2024-10-22 11:43:54,421 - INFO - Entered register route
+2024-10-22 11:43:54,423 DEBUG: Registration data: username=ing, name=ihor, surname=chernov, email=igorek.chernov007@gmail.com, role=admin [in /home/ihor/FemExpenses/app/user_routes.py:65]
+2024-10-22 11:43:54,423 - DEBUG - Registration data: username=ing, name=ihor, surname=chernov, email=igorek.chernov007@gmail.com, role=admin
+2024-10-22 11:50:21,565 INFO: Entered login route [in /home/ihor/FemExpenses/app/user_routes.py:111]
+2024-10-22 11:50:21,565 - INFO - Entered login route
+2024-10-22 11:50:25,130 INFO: Entered register route [in /home/ihor/FemExpenses/app/user_routes.py:56]
+2024-10-22 11:50:25,130 - INFO - Entered register route
+2024-10-22 11:50:33,663 INFO: Entered register route [in /home/ihor/FemExpenses/app/user_routes.py:56]
+2024-10-22 11:50:33,663 - INFO - Entered register route
+2024-10-22 11:50:33,664 DEBUG: Registration data: username=ing, name=ihor, surname=chernov, email=igorek.chernov007@gmail.com, role=admin [in /home/ihor/FemExpenses/app/user_routes.py:66]
+2024-10-22 11:50:33,664 - DEBUG - Registration data: username=ing, name=ihor, surname=chernov, email=igorek.chernov007@gmail.com, role=admin
+2024-10-22 14:40:44,712 INFO: Entered login route [in /home/ihor/FemExpenses/app/user_routes.py:116]
+2024-10-22 14:40:44,712 - INFO - Entered login route
+2024-10-22 14:40:46,045 INFO: Entered register route [in /home/ihor/FemExpenses/app/user_routes.py:56]
+2024-10-22 14:40:46,045 - INFO - Entered register route
+2024-10-22 14:40:55,049 INFO: Entered register route [in /home/ihor/FemExpenses/app/user_routes.py:56]
+2024-10-22 14:40:55,049 - INFO - Entered register route
+2024-10-22 14:40:55,050 DEBUG: Registration data: username=ing, name=ihor, surname=chernov, email=igorek.chernov007@gmail.com, role=admin [in /home/ihor/FemExpenses/app/user_routes.py:66]
+2024-10-22 14:40:55,050 - DEBUG - Registration data: username=ing, name=ihor, surname=chernov, email=igorek.chernov007@gmail.com, role=admin
+2024-10-22 14:43:31,668 INFO: Entered login route [in /home/ihor/FemExpenses/app/user_routes.py:116]
+2024-10-22 14:43:31,668 - INFO - Entered login route
+2024-10-22 14:43:33,122 INFO: Entered register route [in /home/ihor/FemExpenses/app/user_routes.py:56]
+2024-10-22 14:43:33,122 - INFO - Entered register route
+2024-10-22 14:43:45,472 INFO: Entered register route [in /home/ihor/FemExpenses/app/user_routes.py:56]
+2024-10-22 14:43:45,472 - INFO - Entered register route
+2024-10-22 14:43:45,473 DEBUG: Registration data: username=ing, name=ihor, surname=chernov, email=igorek.chernov007@gmail.com, role=admin [in /home/ihor/FemExpenses/app/user_routes.py:66]
+2024-10-22 14:43:45,473 - DEBUG - Registration data: username=ing, name=ihor, surname=chernov, email=igorek.chernov007@gmail.com, role=admin
+2024-10-22 15:02:00,075 INFO: Entered login route [in /home/ihor/FemExpenses/app/user_routes.py:111]
+2024-10-22 15:02:00,075 - INFO - Entered login route
+2024-10-22 15:02:01,395 INFO: Entered register route [in /home/ihor/FemExpenses/app/user_routes.py:56]
+2024-10-22 15:02:01,395 - INFO - Entered register route
+2024-10-22 15:02:09,735 INFO: Entered register route [in /home/ihor/FemExpenses/app/user_routes.py:56]
+2024-10-22 15:02:09,735 - INFO - Entered register route
+2024-10-22 15:02:09,736 DEBUG: Registration data: username=ing, name=ihor, surname=chernov, email=igorek.chernov007@gmail.com, role=admin [in /home/ihor/FemExpenses/app/user_routes.py:66]
+2024-10-22 15:02:09,736 - DEBUG - Registration data: username=ing, name=ihor, surname=chernov, email=igorek.chernov007@gmail.com, role=admin
+2024-10-22 15:02:10,118 INFO: Entered login route [in /home/ihor/FemExpenses/app/user_routes.py:111]
+2024-10-22 15:02:10,118 - INFO - Entered login route
+2024-10-22 15:02:17,733 INFO: Entered login route [in /home/ihor/FemExpenses/app/user_routes.py:111]
+2024-10-22 15:02:17,733 - INFO - Entered login route
+2024-10-22 15:02:17,733 DEBUG: Login attempt with: username_or_email=ing [in /home/ihor/FemExpenses/app/user_routes.py:116]
+2024-10-22 15:02:17,733 - DEBUG - Login attempt with: username_or_email=ing
+2024-10-22 15:04:39,794 INFO: Entered login route [in /home/ihor/FemExpenses/app/user_routes.py:111]
+2024-10-22 15:04:39,794 - INFO - Entered login route
+2024-10-22 15:04:41,079 INFO: Entered login route [in /home/ihor/FemExpenses/app/user_routes.py:111]
+2024-10-22 15:04:41,079 - INFO - Entered login route
+2024-10-22 15:04:54,202 INFO: Entered login route [in /home/ihor/FemExpenses/app/user_routes.py:111]
+2024-10-22 15:04:54,202 - INFO - Entered login route
+2024-10-22 15:04:54,202 DEBUG: Login attempt with: username_or_email=igorek.chernov007@gmail.com [in /home/ihor/FemExpenses/app/user_routes.py:116]
+2024-10-22 15:04:54,202 - DEBUG - Login attempt with: username_or_email=igorek.chernov007@gmail.com
+2024-10-22 15:07:02,493 INFO: Entered login route [in /home/ihor/FemExpenses/app/user_routes.py:111]
+2024-10-22 15:07:02,493 - INFO - Entered login route
+2024-10-22 15:07:05,699 INFO: Entered login route [in /home/ihor/FemExpenses/app/user_routes.py:111]
+2024-10-22 15:07:05,699 - INFO - Entered login route
+2024-10-22 15:07:05,700 DEBUG: Login attempt with: username_or_email=ing [in /home/ihor/FemExpenses/app/user_routes.py:116]
+2024-10-22 15:07:05,700 - DEBUG - Login attempt with: username_or_email=ing
+2024-10-22 15:09:49,946 INFO: Entered login route [in /home/ihor/FemExpenses/app/user_routes.py:111]
+2024-10-22 15:09:49,946 - INFO - Entered login route
+2024-10-22 15:09:53,440 INFO: Entered login route [in /home/ihor/FemExpenses/app/user_routes.py:111]
+2024-10-22 15:09:53,440 - INFO - Entered login route
+2024-10-22 15:09:53,441 DEBUG: Login attempt with: username_or_email=ing [in /home/ihor/FemExpenses/app/user_routes.py:116]
+2024-10-22 15:09:53,441 - DEBUG - Login attempt with: username_or_email=ing
+2024-10-22 15:10:01,313 INFO: Entered expenses route [in /home/ihor/FemExpenses/app/expenses_routes.py:9]
+2024-10-22 15:10:01,313 - INFO - Entered expenses route
+2024-10-22 15:10:01,316 DEBUG: Fetched expenses for user_id=1: () [in /home/ihor/FemExpenses/app/expenses_routes.py:17]
+2024-10-22 15:10:01,316 - DEBUG - Fetched expenses for user_id=1: ()
+2024-10-22 15:10:07,481 INFO: Entered login route [in /home/ihor/FemExpenses/app/user_routes.py:111]
+2024-10-22 15:10:07,481 - INFO - Entered login route
+2024-10-22 15:10:11,201 INFO: Entered login route [in /home/ihor/FemExpenses/app/user_routes.py:111]
+2024-10-22 15:10:11,201 - INFO - Entered login route
+2024-10-22 15:10:17,540 INFO: Entered login route [in /home/ihor/FemExpenses/app/user_routes.py:111]
+2024-10-22 15:10:17,540 - INFO - Entered login route

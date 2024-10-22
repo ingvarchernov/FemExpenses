@@ -54,6 +54,7 @@ def delete_user(user_id):
 @user_bp.route('/register', methods=['GET', 'POST'])
 def register():
     current_app.logger.info('Entered register route')
+
     if request.method == 'POST':
         username = request.form['username']
         name = request.form['name']
@@ -68,23 +69,42 @@ def register():
 
         conn = get_db_connection()
         cursor = conn.cursor()
-                # Перевірка на унікальність username та email
-        cursor.execute("SELECT * FROM Users WHERE username = ? OR email = ?", (username, email))
-        if cursor.fetchone():
-            flash('Username or email already exists', 'danger')
-            current_app.logger.debug(f'We are looking for user ({username}) wich try to register for one more time.')
-            return redirect(url_for('user_bp.register'))
 
-        cursor.execute("INSERT INTO Users (username, name, surname, email, password, role) VALUES (?, ?, ?, ?, ?, ?)",
-                       (username, name, surname, email, hashed_password, role))
-        conn.commit()
-        cursor.close()
+        # Перевірка на пусту таблицю (чи є користувачі в БД)
+        cursor.execute("SELECT COUNT(*) FROM Users")
+        # Отримання кількості користувачів
+        result = cursor.fetchone()
+        if result is not None:
+            # Якщо є користувачі, перевірка на унікальність username та email
+            cursor.execute("SELECT * FROM Users WHERE username = %s OR email = %s", (username, email))
+            user = cursor.fetchone()
 
-        flash('Registration  successful!', 'success')
+            if user:
+                flash('Username or email already exists', 'danger')
+                current_app.logger.debug(f'User with username {username} or email {email} already exists.')
+                return redirect(url_for('user_bp.register'))
 
-        return redirect(url_for('user_bp.login'))
+            # Додавання нового користувача, якщо немає дубля
+            cursor.execute("INSERT INTO Users (username, name, surname, email, password, role) VALUES (%s, %s, %s, %s, %s, %s)",
+                        (username, name, surname, email, hashed_password, role))
+            conn.commit()
+            cursor.close()
+
+            flash('Registration successful!', 'success')
+            return redirect(url_for('user_bp.login'))
+        else:
+            current_app.logger.info('No users found in the database. Registering the first user.')
+            # Якщо немає користувачів, реєструємо першого
+            cursor.execute("INSERT INTO Users (username, name, surname, email, password, role) VALUES (%s, %s, %s, %s, %s, %s)",
+                           (username, name, surname, email, hashed_password, role))
+            conn.commit()
+            cursor.close()
+
+            flash('First user registered successfully!', 'success')
+            return redirect(url_for('user_bp.login')) # Обробка випадку, коли немає користувачів
 
     return render_template('register_user.html')
+
 
 @user_bp.route('/login', methods=['GET', 'POST'])
 def login():
@@ -97,14 +117,14 @@ def login():
 
         conn = get_db_connection()
         cursor = conn.cursor()
-        cursor.execute("SELECT * FROM Users WHERE username = ? OR email = ?", (username_or_email, username_or_email))
+        cursor.execute("SELECT * FROM Users WHERE username = %s OR email = %s", (username_or_email, username_or_email))
         user = cursor.fetchone()
         cursor.close()
 
-        if user and check_password_hash(user.password, password):
-            session['user_id'] = user.id
-            session['username'] = user.username
-            session['role'] = user.role
+        if user and check_password_hash(user['password'], password):
+            session['user_id'] = user['id']
+            session['username'] = user['username']
+            session['role'] = user['role']
             return redirect(url_for('main_bp.index'))
         else:
             flash('Invalid username/email or password', 'danger')
