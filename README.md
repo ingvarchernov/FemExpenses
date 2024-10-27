@@ -17,12 +17,14 @@ The project relies on MySQL as its core database, with a robust structure focuse
 Efficient indexing for high-performance queries
 Table relationships supporting normalized data
 Use of complex joins and views for comprehensive reporting
+
 2. Financial Data Management
 FemExpenses supports various SQL operations for managing financial data, such as:
 
 CRUD operations for expenses, categories, and budgets
 Detailed transactions history with query-optimized data retrieval
 Secure handling of sensitive financial information
+
 3. Reporting and Visualization
 The project includes SQL queries for generating insightful reports on:
 
