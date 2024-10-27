@@ -31,12 +31,19 @@ The project includes SQL queries for generating insightful reports on:
 Monthly and yearly spending
 Category-wise expenditure distribution
 Budget vs. actual spending trends
+
 Technologies Used
+
 Database: MySQL
+
 Backend: Python with Flask
+
 Frontend: HTML/CSS, JavaScript (Vue.Js)
+
 Database Management: PyMySQL
+
 SQL Highlights
+
 FemExpenses demonstrates practical SQL skills, including:
 
 Advanced SQL queries with joins, subqueries, and conditional aggregations
